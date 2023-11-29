@@ -1,0 +1,71 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {}
+
+.header__nav {}
+
+.header__nav--list {}
+
+.header__nav--item {}
+
+.header__nav--link {
+    color: #7D7D7D;
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__nav--link:hover,
+.header__nav--link:focus {
+    color: #03A9F4;
+}
+
+/*menu*/
+
+.blog__list {}
+
+.blog__item {}
+
+.blog__item--subtitle {
+    color: #B4AD9E;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.blog__item--title {
+    color: #626262;
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.blog__item--text {
+    color: #626262;
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.blog__item--img {
+    width: 420px;
+    height: 280px;
+}
+
+.blog__button {
+    width: 165px;
+    height: 60px;
+}
+
+.container {
+    width: 906px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

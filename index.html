@@ -5,84 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">LIFESTYLE</a></li>
-                <li><a href="#">PHOTODIARY</a></li>
-                <li><a href="#">MUSIC</a></li>
-                <li><a href="#">TRAVEL</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="#">LIFESTYLE</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="#">PHOTODIARY</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="#">MUSIC</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="#">TRAVEL</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main>
-        <section>
-            <ul>
-                <li>
-                    <img src="./images/dance.jpg" alt="dancing girl">
-                    <p>LIFESTYLE</p>
-                    <h2>More than just a music festival</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea.</p>
-                </li>
-                <li>
-                    <img src="./images/tea.jpg" alt="tea">
-                    <p>LIFESTYLE</p>
-                    <h2>Life tastes better with coffee</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea.</p>
-                </li>
-                <li>
-                    <img src="./images/girls.jpg" alt="girls">
-                    <p>PHOTODAIRY</p>
-                    <h2>American dream</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea.</p>
-                </li>
-                <li>
-                    <img src="./images/men.jpg" alt="men">
-                    <p>PHOTODAIRY</p>
-                    <h2>A day exploring the Alps</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea.</p>
-                </li>
-                <li>
-                    <img src="./images/pp.jpg" alt="stayinggirl">
-                    <p>LIFESTYLE</p>
-                    <h2>Top 10 song for running</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea.</p>
-                </li>
-                <li>
-                    <img src="./images/road.jpg" alt="road">
-                    <p>LIFESTYLE</p>
-                    <h2>Cold winter days</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea.</p>
-                </li>
+        <div class="container">
+            <ul class="blog__list"></ul>
+            <li class="blog__item">
+                <img src="./images/dance.jpg" alt="dancing girl">
+                <p class="blog__item--subtitle">LIFESTYLE</p>
+                <h2 class="blog__item--title">More than just a music festival</h2>
+                <p class="blog__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea.</p>
+            </li>
+            <li class="blog__item">
+                <img class="blog__item--img" src="./images/tea.jpg" alt="tea">
+                <p class="blog__item--subtitle">LIFESTYLE</p>
+                <h2 class="blog__item--title">Life tastes better with coffee</h2>
+                <p class="blog__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea.</p>
+            </li>
+            <li class="blog__item">
+                <img class="blog__item--img" src="./images/girls.jpg" alt="girls">
+                <p class="blog__item--subtitle">PHOTODAIRY</p>
+                <h2 class="blog__item--title">American dream</h2>
+                <p class="blog__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea.</p>
+            </li>
+            <li class="blog__item">
+                <img class="blog__item--img" src="./images/men.jpg" alt="men">
+                <p class="blog__item--subtitle">PHOTODAIRY</p>
+                <h2 class="blog__item--title">A day exploring the Alps</h2>
+                <p class="blog__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea.</p>
+            </li>
+            <li class="blog__item">
+                <img class="blog__item--img" src="./images/pp.jpg" alt="stayinggirl">
+                <p class="blog__item--subtitle">LIFESTYLE</p>
+                <h2 class="blog__item--title">Top 10 song for running</h2>
+                <p class="blog__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea.</p>
+            </li>
+            <li class="blog__item">
+                <img class="blog__item--img" src="./images/road.jpg" alt="road">
+                <p class="blog__item--subtitle">LIFESTYLE</p>
+                <h2 class="blog__item--title">Cold winter days</h2>
+                <p class="blog__item--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea.</p>
+            </li>
             </ul>
-        </section>
-        <section>
-            <button type="button">Load More</button>
-        </section>
+            <button class="blog__button" type="button">Load More</button>
+        </div>
     </main>
 </body>
 
